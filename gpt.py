@@ -1,10 +1,7 @@
 from openai import OpenAI
 
-def fetch_response(language, prompt, user_api_key=""):
-  if user_api_key == "":
-    client = OpenAI()
-  else:
-    client = OpenAI(user_api_key)
+def fetch_response(language, prompt, user_api_key):
+  client = OpenAI(api_key=user_api_key)
 
   completion = client.chat.completions.create(
     model="gpt-3.5-turbo",
