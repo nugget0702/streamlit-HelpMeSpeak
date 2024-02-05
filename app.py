@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np 
 import gpt
 
-st.title("HelpMeSpeak")
+st.title("Learn-To-Speak")
 st.text("Welcome to your language learning journey!")
 st.text("We will help you speak any language of your choice within minutes!")
 
