@@ -27,7 +27,7 @@ def prompt():
     st.divider()
     clicked = st.button("Learn!", type="primary", disabled=(True if (story_input == "" or language_selection == "") else False))
     if clicked:
-        generate_text(language_selection, story_input, user_api_key)
+        generate_text(language_selection, story_input, st.secrets["user_api_key"])
             
 
 def display_text(txt):
