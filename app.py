@@ -25,7 +25,6 @@ def prompt():
     story_input = st.text_input("I want to speak ...", max_chars=25)
     story_input = str.lower(story_input)
     st.divider()
-    user_api_key = st.text_input("Enter your OpenAI API-KEY: ")
     clicked = st.button("Learn!", type="primary", disabled=(True if (story_input == "" or language_selection == "") else False))
     if clicked:
         generate_text(language_selection, story_input, user_api_key)
