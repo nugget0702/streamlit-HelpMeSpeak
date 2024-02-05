@@ -1,6 +1,5 @@
 pip==24.0
 streamlit
-time
 pandas
 numpy
 openai
