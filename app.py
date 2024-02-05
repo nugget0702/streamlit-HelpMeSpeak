@@ -28,6 +28,8 @@ def prompt():
     clicked = st.button("Learn!", type="primary", disabled=(True if (story_input == "" or language_selection == "") else False))
     if clicked:
         generate_text(language_selection, story_input, st.secrets["user_api_key"])
+        st.write("*GPT may not always produce accurate responses.")
+        st.write("\n\n\n Protoype in-progress. © Property of Nakul Srikanth")
             
 
 def display_text(txt):
